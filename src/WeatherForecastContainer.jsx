@@ -79,7 +79,7 @@ export default function WeatherForecastContainer(){
                       <span>{period.detailedForecast}</span>
                     </div>
                   </div>
-                  <img src={period.icon}/>
+                  <img alt="weather forecast day" src={period.icon}/>
                 </div>
               </li>
             )
