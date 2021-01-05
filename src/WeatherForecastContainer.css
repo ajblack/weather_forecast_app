@@ -1,0 +1,33 @@
+.hidden{
+  display:none;
+}
+
+li{
+  list-style:none;
+  text-align:left;
+  padding:20px;
+  margin-left:-40px;
+}
+
+input{
+  margin-right: 20px;
+}
+
+.user-inputs{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-pair{
+  display:inline-block;
+}
+
+.weather-content-entry{
+  display: flex;
+  justify-content: space-between;
+}
+
+li:nth-child(odd) { background: rgba(120,120,120,.5); }
