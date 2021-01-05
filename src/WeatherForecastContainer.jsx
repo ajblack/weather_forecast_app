@@ -68,17 +68,17 @@ export default function WeatherForecastContainer(){
         {
           periods.map(period=>{
             return(
-              <li>
+              <li key={period.name}>
                 <h3>{period.name}</h3>
                 <div className="weather-content-entry">
-                  <p>
-                  <div>
-                    <span>Temp: {period.temperature} {period.temperatureUnit}</span>
+                  <div className="weather-content-text">
+                    <div>
+                      <span>Temp: {period.temperature} {period.temperatureUnit}</span>
+                    </div>
+                    <div>
+                      <span>{period.detailedForecast}</span>
+                    </div>
                   </div>
-                  <div>
-                    <span>{period.detailedForecast}</span>
-                  </div>
-                  </p>
                   <img src={period.icon}/>
                 </div>
               </li>

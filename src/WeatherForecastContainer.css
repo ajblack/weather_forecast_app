@@ -31,3 +31,7 @@ input{
 }
 
 li:nth-child(odd) { background: rgba(120,120,120,.5); }
+
+img{
+  border-radius:5px;
+}
