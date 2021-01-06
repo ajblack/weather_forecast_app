@@ -1,10 +1,20 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project consists of a React SPA and a simple web server built with Node.js and Express.  The purpose of this app is to display weather forecast data using the National Weather Service API.
+
+The Application gathers data in two steps.  The first query to the National Weather Service API provides the coordinates that the user has entered.  The application saves the city and state data from this response as well as gridX, gridY, and gridId values.
+The user is notified with an alert if they have entered coordinates that are outside the United States.
+
+The gridX, gridY, an gridId parameters are passed into a second API call which provides the actual forecast data.  
+If a user has entered coordinates that are within the United States BUT not a supported forecast type (such as marine forecasts in a body of water), the user is notified with an alert.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `node server.js`
+
+Starts the web server.  This web server DOES NOT serve the React app. It is used only the interact with the National Weather Service API.
 
 ### `npm start`
 
